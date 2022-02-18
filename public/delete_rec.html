@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Rectangles</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-size: 4vw;
+            font-weight: lighter;
+            color: #051428;
+        }
+        .middlediv {
+            text-align: center;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        p {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-size: 2vw;
+            font-weight: lighter;
+        }
+        table,th {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        input[type=button], select {
+            pointer-events: auto;
+            cursor: pointer;
+            background: #e7e7e7;
+            border: none;
+            padding: 1.5rem 3rem;
+            margin: 20px;
+            font-family: inherit;
+            font-size: inherit;
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type=text], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 13px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 13px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=color], select {
+            width: 5%;
+            padding: 12px 20px;
+            margin: 13px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit], select {
+            pointer-events: auto;
+            cursor: pointer;
+            background: #e7e7e7;
+            border: none;
+            padding: 1.5rem 3rem;
+            margin: 20px;
+            font-family: inherit;
+            font-size: inherit;
+            position: relative;
+            display: inline-block;
+        }
+        input[type=reset], select {
+            pointer-events: auto;
+            cursor: pointer;
+            background: #e7e7e7;
+            border: none;
+            padding: 1.5rem 3rem;
+            margin: 20px;
+            font-family: inherit;
+            font-size: inherit;
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Here you can Delete your rectangles</h1>
+<p>Just type into any one of the areas below :)</p>
+
+<br>
+
+<div class ="middlediv">
+    <form class="form" id="ADD_REC" action="/deleterec" method="post">
+        <label for="name">Name</label>
+        <input type = "text" id = "name" name = "RName" value = "" placeholder="Name the rectangle.."><br>
+        <input type="submit" id ='subm' name="sub" value="Delete">
+        <input type=reset value="Clear Form">
+    </form>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add_rec</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/add_rec.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Here you can create your rectangles</h1>
+<p>Type the specifications below :)</p>
+
+<br>
+
+<div class ="middlediv">
+    <form class="form" id="ADD_REC" action="/addrec" method="post">
+        <label for="name">Name</label>
+            <input type = "text" id = "name" name = "rname" value = "" placeholder="Name the rectangle.."><br>
+        <label for="x_off">X --></label>
+            <input type = "number" id = "x_off" name = "x_offset" value = "" placeholder="X offset"><br>
+        <label for="y_off">Y --></label>
+            <input type = "number" id = "y_off" name = "y_offset" value = "" placeholder="Y offset"><br>
+        <label for="line_breadth">Thick</label>
+            <input type="number" id="line_breadth" name="l_width" value="" placeholder="Line width"><br>
+        <label for="length">Length</label>
+            <input type = "number" id = "length" name = "length" value = "" placeholder="Length in cm"><br>
+        <label for="breadth">Breadth</label>
+            <input type = "number" id = "breadth" name = "breadth" value = "" placeholder="Breadth in cm"><br>
+
+
+        <input type="submit" id ='subm' name="sub" value="Perfect!">
+        <input type="button" value="Create" id="create_rec">
+        <input type=reset value="Clear Form">
+    </form>
+</div>
+<div>
+    <p>You can see your created rectangles below :)</p>
+    <canvas id="myCanvas" width="1400%" height="150%" style="border:1px solid #d3d3d3;"></canvas>
+</div>
+
+<script src="JS/add_rec.js"></script>
+</body>
+
+</html>

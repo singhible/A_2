@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            font-size: 4vw;
+            font-weight: lighter;
+            color: #051428;
+        }
+        .middlediv {
+            text-align: center;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        table,th {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+    <title>Display Rectangles</title>
+</head>
+
+<body>
+
+
+<div class="middlediv">
+    <h1>Database Results</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>X offset</th>
+            <th>Y offset</th>
+            <th>Line Thickness</th>
+            <th>Length</th>
+            <th>Breadth</th>
+        </tr>
+        <% rows.forEach(function(r) { %>
+            <tr>
+                <th><%= r.name %></th>
+                <th><%= r.xoffset %></th>
+                <th> <%=r.yoffset%></th>
+                <th> <%=r.thickness%></th>
+                <th> <%=r.length%></th>
+                <th> <%=r.breadth%> </th>
+            </tr>
+        <% }); %>
+    </table>
+</div>
+<br><br><br><br>
+<div class="middlediv">
+    <form class="form" id="Delete_REC" action="/deleterec" method="post">
+        <label for="Name"></label>
+        <label for="name"></label><input type = "text" id = "name_rec" name = "RName" value = "" placeholder="Name the rectangle you want to delete">
+        <input type="submit" id ='SUB' name="SUBm" value="Delete">
+    </form>
+</div>
+
+</body>
+</html>

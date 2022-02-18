@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 4vw;
+    font-weight: lighter;
+    color: #051428;
+}
+.middlediv {
+    text-align: center;
+    /*border: 3px solid green;*/
+}
+body {
+    background-color: antiquewhite;
+}
+.btn {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #e7e7e7;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+#btn3 {
+
+}
